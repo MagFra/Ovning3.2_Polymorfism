@@ -4,6 +4,8 @@
     {
         static void Main(string[] args)
         {
+            TextInputError tempKlass = new TextInputError();
+            string temp = TextInputError.UEMessage();
             Console.WriteLine("Hello, World!");
         }
     }
