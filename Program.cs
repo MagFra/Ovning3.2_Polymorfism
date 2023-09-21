@@ -9,6 +9,9 @@
             { 
                 errors.Add(new NumericInputError());
                 errors.Add(new TextInputError());
+                errors.Add(new FantasilostFelEtt());
+                errors.Add(new FantasilostFelTvå());
+                errors.Add(new FantasilostFelTre());
             }
             foreach (UserError error in errors)
             {
