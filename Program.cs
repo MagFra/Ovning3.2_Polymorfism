@@ -4,9 +4,17 @@
     {
         static void Main(string[] args)
         {
-            TextInputError tempKlass = new TextInputError();
-            string temp = TextInputError.UEMessage();
-            Console.WriteLine("Hello, World!");
+            List<UserError> errors = new List<UserError>();
+            for (int i = 0; i < 5; i++) 
+            { 
+                errors.Add(new NumericInputError());
+                errors.Add(new TextInputError());
+            }
+            foreach (UserError error in errors)
+            {
+                int nr = errors.IndexOf(error);
+                Console.WriteLine($"Error({nr}): { error.UEMessage()}");
+            }
         }
     }
 }
